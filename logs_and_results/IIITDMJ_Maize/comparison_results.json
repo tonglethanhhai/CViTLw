@@ -1,0 +1,24 @@
+{
+  "source": "augmented",
+  "split_mode": "fold",
+  "model": "CViTLw (none-none-secbam)",
+  "pretrain": "CNN_ImageNet_ViT_scratch",
+  "n_runs": 5,
+  "val": {
+    "Accuracy": "97.9149 +/- 1.7617",
+    "Precision": "97.9627 +/- 1.7582",
+    "Recall": "97.8750 +/- 1.7941",
+    "F1-Score": "97.8839 +/- 1.8002",
+    "Kappa": "0.9722 +/- 0.0235",
+    "AUC": "0.9991 +/- 0.0008"
+  },
+  "test_10pct": null,
+  "drone_unseen": {
+    "Accuracy": "38.7000 +/- 11.3824",
+    "Precision": "40.7550 +/- 11.3597",
+    "Recall": "38.7000 +/- 11.3824",
+    "F1-Score": "26.9089 +/- 12.3435",
+    "Kappa": "0.1827 +/- 0.1518",
+    "AUC": "0.8719 +/- 0.0210"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "CViTLw": {
+    "Params (M)": 0.334,
+    "Accuracy": "90.94",
+    "Precision": "90.33",
+    "Recall": "88.93",
+    "F1-Score": "89.29",
+    "Kappa": "0.9048",
+    "AUC": "0.9974",
+    "Train Time (min)": "85.45"
+  },
+  "MobileNetV2": {
+    "Params (M)": 2.269,
+    "Accuracy": "79.81",
+    "Precision": "78.19",
+    "Recall": "77.55",
+    "F1-Score": "77.63",
+    "Kappa": "0.7878",
+    "AUC": "0.9898",
+    "Train Time (min)": "90.83"
+  },
+  "EfficientNet-B0": {
+    "Params (M)": 4.052,
+    "Accuracy": "82.90",
+    "Precision": "82.22",
+    "Recall": "81.93",
+    "F1-Score": "81.62",
+    "Kappa": "0.8203",
+    "AUC": "0.9933",
+    "Train Time (min)": "92.29"
+  },
+  "ResNet-50": {
+    "Params (M)": 23.58,
+    "Accuracy": "83.70",
+    "Precision": "82.74",
+    "Recall": "82.01",
+    "F1-Score": "82.08",
+    "Kappa": "0.8288",
+    "AUC": "0.9934",
+    "Train Time (min)": "86.83"
+  },
+  "ViT-B/16": {
+    "Params (M)": 85.826,
+    "Accuracy": "82.50",
+    "Precision": "80.25",
+    "Recall": "79.47",
+    "F1-Score": "79.00",
+    "Kappa": "0.8161",
+    "AUC": "0.9927",
+    "Train Time (min)": "70.78"
+  },
+  "Swin-Tiny": {
+    "Params (M)": 27.546,
+    "Accuracy": "86.67",
+    "Precision": "84.61",
+    "Recall": "83.71",
+    "F1-Score": "83.90",
+    "Kappa": "0.8599",
+    "AUC": "0.9949",
+    "Train Time (min)": "93.72"
+  },
+  "DeiT-Small": {
+    "Params (M)": 21.679,
+    "Accuracy": "82.87",
+    "Precision": "81.10",
+    "Recall": "79.20",
+    "F1-Score": "79.33",
+    "Kappa": "0.8199",
+    "AUC": "0.9920",
+    "Train Time (min)": "91.88"
+  },
+  "MobileViT-S": {
+    "Params (M)": 4.96,
+    "Accuracy": "84.26",
+    "Precision": "85.10",
+    "Recall": "83.16",
+    "F1-Score": "83.47",
+    "Kappa": "0.8346",
+    "AUC": "0.9922",
+    "Train Time (min)": "88.16"
+  },
+  "ConvNeXt-Base": {
+    "Params (M)": 87.602,
+    "Accuracy": "81.91",
+    "Precision": "80.36",
+    "Recall": "79.35",
+    "F1-Score": "78.63",
+    "Kappa": "0.8099",
+    "AUC": "0.9923",
+    "Train Time (min)": "94.46"
+  }
+}
