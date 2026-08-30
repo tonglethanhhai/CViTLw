@@ -8,21 +8,25 @@ Official artifact and code repository for the paper **"CViTLw: A Lightweight Con
 
 ```text
 CViTLw/
-├── CViTLw_Model.ipynb          # Jupyter notebook with complete model definition & parameter analysis
+├── CViTLw_Model.ipynb               # Jupyter notebook with complete model definition & parameter analysis
 ├── paper/
-│   └── CViTLw_Wiley.pdf        # Manuscript PDF (Wiley format)
-├── checkpoints/                # Best-fold model weights (.pth) for each dataset
-│   ├── PlantVillage_Full/      # 38 classes (Acc: 99.76%)
-│   │   └── CViTLw_fold5_best.pth
-│   ├── IIITDMJ_Maize/          # 4 classes (Acc: 100.00%)
-│   │   └── CViTLw_fold3_best.pth
-│   └── PlantRAW/               # Complex field dataset (Acc: 90.94%)
-│       └── CViTLw_best.pth
-└── logs_and_results/           # Raw training logs & JSON metrics matching paper results
-    ├── PlantVillage_Full/      # training.log, comparison_results.json, training_progress.json
-    ├── IIITDMJ_Maize/          # training.log, comparison_results.json, training_progress.json
-    ├── PlantRAW/               # training.log, comparison_results.json, training_progress.json
-    └── Ablation_PlantPathology2020/ # 5-fold cross-validation ablation logs & results
+│   └── CViTLw_Wiley.pdf             # Camera-ready manuscript PDF (Wiley USG format)
+│
+├── checkpoints/                     # Best-fold model weights (.pth) for all 6 evaluation datasets
+│   ├── 1_PlantVillage_Full/         # 38 classes, 54k images (Acc: 99.76%) -> CViTLw_fold5_best.pth
+│   ├── 2_PVCorn_Subset/             # 4 classes, 3.8k images (Acc: 99.22%) -> CViTLw_fold3_best.pth
+│   ├── 3_PlantPathology2020_Ablation/# 4 classes, 6.1k images (Acc: 97.74%) -> Hybrid_none-none-secbam_fold2_best.pth
+│   ├── 4_Maize_Mduma2023/           # 3 classes, 18.4k images (Acc: 99.70%) -> CViTLw_fold4_best.pth
+│   ├── 5_IIITDMJ_Maize/             # 4 classes, field & drone (Acc: 100.00%) -> CViTLw_fold3_best.pth
+│   └── 6_PlantRAW/                  # 35 classes, 16.1k images (Acc: 90.94%) -> CViTLw_best.pth
+│
+└── logs_and_results/                # Raw training logs & JSON metrics matching paper results
+    ├── 1_PlantVillage_Full/         # training.log, comparison_results.json, training_progress.json
+    ├── 2_PVCorn_Subset/             # training.log, comparison_results.json, training_progress.json
+    ├── 3_PlantPathology2020_Ablation/# ablation_training.log, ablation_kfold_results.json, progress.json
+    ├── 4_Maize_Mduma2023/           # training.log, comparison_results.json, training_progress.json
+    ├── 5_IIITDMJ_Maize/             # training.log, comparison_results.json, training_progress.json
+    └── 6_PlantRAW/                  # training.log, comparison_results.json, training_progress.json
 ```
 
 ---
@@ -36,6 +40,19 @@ CViTLw/
 - **Total Parameters**: **334,008 (0.334 M)**
 - **Computational Cost**: **143.54 MFLOPs**
 - **Inference Latency**: **~5.0 ms / image** (NVIDIA RTX 5070 Ti)
+
+---
+
+## 📊 Overview of the Six Evaluation Datasets & Results
+
+| # | Dataset | Samples | Classes | Setup / Environment | Evaluation Protocol | CViTLw Top Acc | Best Checkpoint |
+|:---:|:---|:---:|:---:|:---|:---|:---:|:---|
+| **1** | **PlantVillage Full** | 54,305 | 38 | Controlled Laboratory | 5-Fold Stratified CV | **99.76%** | `CViTLw_fold5_best.pth` |
+| **2** | **PV-Corn Subset** | 3,852 | 4 | Controlled Laboratory | 5-Fold Stratified CV | **99.22%** | `CViTLw_fold3_best.pth` |
+| **3** | **PlantPathology 2020** | 6,192 | 4 | Real-world Field (DSLR) | 5-Fold Ablation CV | **97.74%** | `Hybrid_none-none-secbam_fold2_best.pth` |
+| **4** | **Maize Leaf Disease** | 18,402 | 3 | Real-world Field (Smartphone) | 5-Fold Stratified CV | **99.70%** | `CViTLw_fold4_best.pth` |
+| **5** | **IIITDMJ Maize** | 816 / 200 | 4 | Field & Aerial Drone | 5-Fold CV + Drone OOD | **100.00%** | `CViTLw_fold3_best.pth` |
+| **6** | **PlantRAW (Ours)** | 16,165 | 35 | Multi-source In-the-wild | Standard Split | **90.94%** | `CViTLw_best.pth` |
 
 ---
 
@@ -59,16 +76,6 @@ To inspect the model architecture, layer parameters, tensor shapes, FLOPs, and l
 - PyTorch >= 2.0
 - torchvision
 - numpy
-
----
-
-## 📊 Summary of Experimental Results
-
-| Dataset | Classes | Split / Validation | CViTLw Accuracy | Params (M) |
-|:---|:---:|:---:|:---:|:---:|
-| **PlantVillage (Full)** | 38 | 5-Fold CV | **99.76%** | 0.334 |
-| **IIITDMJ Maize** | 4 | 5-Fold CV | **99.39% ± 1.8% (Peak: 100%)** | 0.334 |
-| **PlantRAW (Field)** | 10 | Standard Split | **90.94%** | 0.334 |
 
 ---
 

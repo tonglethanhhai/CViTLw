@@ -1,0 +1,2 @@
+2026-07-28 23:02:11 | [LAUNCH] Attempt 1/10: C:\Program Files\Python312\python.exe C:\Users\Admin\Desktop\hai\ConViTX\code ViT_8 block CNN\HybridModel_PlantVillage_Corn_NoPretrain\train_pvcorn_nopretrain.py 
+2026-07-29 03:45:35 | [DONE] Training script exited cleanly (all models/folds finished or skipped).
