@@ -87,7 +87,7 @@ If you find this code or research useful, please cite our paper:
 @article{tongle2026cvitlw,
   title={CViTLw: A Lightweight Convolutional Neural Network and Vision Transformer Hybrid Architecture for Plant Disease Classification},
   author={Tong-Le, Thanh-Hai and Le, Minh-Hai and Doan, Thanh-Nghi},
-  journal={Wiley},
+  journal={Journal of Electrical and Computer Engineering},
   year={2026}
 }
 ```
