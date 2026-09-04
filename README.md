@@ -12,7 +12,7 @@ Official artifact and code repository for the paper **"CViTLw: A Lightweight Con
 
 ```text
 CViTLw/
-├── CViTLw_Model.ipynb               # Jupyter notebook with complete model definition & parameter analysis
+├── CViTLw_Model.ipynb               # Model inspection notebook (available upon formal acceptance / on request)
 ├── paper/
 │   └── CViTLw_Wiley.pdf             # Camera-ready manuscript PDF (Wiley USG format)
 │
@@ -50,7 +50,7 @@ CViTLw/
 ## 📊 Overview of the Six Evaluation Datasets & Results
 
 | # | Dataset | Samples | Classes | Setup / Environment | Evaluation Protocol | CViTLw Top Acc | Best Checkpoint |
-|:---:|:---|:---:|:---:|:---|:---|:---:|:---|
+|:---:|:---|:---:|:---|:---:|:---|:---:|:---|
 | **1** | **PlantVillage Full** | 54,305 | 38 | Controlled Laboratory | 5-Fold Stratified CV | **99.76%** | `CViTLw_fold5_best.pth` |
 | **2** | **PV-Corn Subset** | 3,852 | 4 | Controlled Laboratory | 5-Fold Stratified CV | **99.22%** | `CViTLw_fold3_best.pth` |
 | **3** | **PlantPathology 2020** | 6,192 | 4 | Real-world Field (DSLR) | 5-Fold Ablation CV | **97.74%** | `Hybrid_none-none-secbam_fold2_best.pth` |
@@ -62,18 +62,8 @@ CViTLw/
 
 ## 🚀 Quick Start & Model Inspection
 
-To inspect the model architecture, layer parameters, tensor shapes, FLOPs, and latency:
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/tonglethanhhai/CViTLw.git
-   cd CViTLw
-   ```
-
-2. Open and run the Jupyter notebook:
-   ```bash
-   jupyter notebook CViTLw_Model.ipynb
-   ```
+> [!NOTE]  
+> The self-contained Jupyter notebook (`CViTLw_Model.ipynb`) with the complete architectural definition and training scripts will be made publicly available upon formal acceptance of the manuscript. During the peer-review process, the code is readily available to the editors and reviewers from the corresponding author upon reasonable request.
 
 ### Requirements
 - Python >= 3.9
