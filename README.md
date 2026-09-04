@@ -62,7 +62,7 @@ To inspect the model architecture, layer parameters, tensor shapes, FLOPs, and l
 
 1. Clone this repository:
    ```bash
-   git clone <REPO_URL>
+   git clone https://github.com/tonglethanhhai/CViTLw.git
    cd CViTLw
    ```
 
