@@ -2,6 +2,10 @@
 
 Official artifact and code repository for the paper **"CViTLw: A Lightweight Convolutional Neural Network and Vision Transformer Hybrid Architecture for Plant Disease Classification"**.
 
+> [!IMPORTANT]  
+> **PEER-REVIEW CONFIDENTIALITY NOTICE**  
+> This repository and its contents are under active peer review for the *Journal of Electrical and Computer Engineering (Wiley)*. All rights are reserved. Unauthorized reproduction, copying, distribution, or commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
+
 ---
 
 ## 📌 Repository Structure

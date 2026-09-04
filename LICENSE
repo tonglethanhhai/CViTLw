@@ -1,0 +1,40 @@
+Copyright (c) 2026 Thanh-Hai Tong-Le, Minh-Hai Le, Thanh-Nghi Doan. All rights reserved.
+
+================================================================================
+RESTRICTED ACADEMIC EVALUATION LICENSE (PEER-REVIEW NOTICE)
+================================================================================
+
+This source code, Jupyter notebooks, model architectures, weights, and associated
+materials are part of an original scientific research manuscript currently 
+under formal peer review for publication:
+
+Title: "CViTLw: A Lightweight Convolutional Neural Network and Vision Transformer 
+       Hybrid Architecture for Plant Disease Classification"
+Journal: Journal of Electrical and Computer Engineering (Wiley)
+
+TERMS AND CONDITIONS:
+
+1. PEER-REVIEW EVALUATION ONLY:
+   Access to this repository is provided strictly for academic verification, 
+   reproducibility evaluation, and editorial/reviewer assessment during the 
+   peer-review process.
+
+2. PROHIBITION OF REDISTRIBUTION AND REPRODUCTION:
+   Unauthorized copying, cloning, modification, redistribution, re-hosting, 
+   or pre-publication dissemination of any portion of this code, notebook, 
+   or architectural design is strictly prohibited.
+
+3. PROHIBITION OF COMMERCIAL USE:
+   Any commercial exploitation or patenting of this software or its derivative 
+   works without written consent is strictly forbidden.
+
+4. TRANSITION UPON FORMAL ACCEPTANCE:
+   Upon formal acceptance and publication of the manuscript, this repository 
+   will be transitioned to a standard permissive open-source license 
+   (e.g., MIT or Apache 2.0).
+
+For correspondence or licensing inquiries, please contact:
+Assoc. Prof. Dr. Thanh-Nghi Doan (Corresponding Author)
+Faculty of Information Technology, An Giang University
+Vietnam National University Ho Chi Minh City, Vietnam
+Email: dtnghi@agu.edu.vn
